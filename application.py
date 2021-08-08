@@ -4,8 +4,8 @@ from wtforms import StringField,SubmitField,RadioField,TextAreaField
 from wtforms.fields.html5 import EmailField
 from wtforms.validators import InputRequired
 
-app=Flask(__name__)
-app.config['SECRET_KEY']='some_random_secret'
+application=Flask(__name__)
+application.config['SECRET_KEY']='some_random_secret'
 
 class SignUpForm(FlaskForm):
     name=StringField('Enter your Name',validators=[InputRequired()])
